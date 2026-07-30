@@ -50,11 +50,13 @@ PR 제목은 `[#이슈번호] 설명` 형식을 검사한다. Issue 제목은 �
 
 Nginx와 Cloudflare Tunnel은 별도 runtime 구성으로 실행한다. Nginx exporter는 `stub_status`를 Prometheus 형식으로 노출한다.
 
-## 현재 확인이 필요한 점
+## 현재 확인한 점
 
 현재 `deploy/deploy.sh`는 새 컨테이너의 health check가 통과하면 이전 slot 컨테이너를 먼저 제거하고, 이후 별도 Nginx job이 upstream을 새 slot으로 바꾼다.
 
-이 순서가 실제 요청에 얼마만큼의 실패 구간을 만드는지는 아직 실험으로 확인하지 않았다. 따라서 “무중단 배포”라고 단정하지 않는다. 이 문제는 RFC와 재현 실험으로 확인한 뒤, 결과와 결정은 `decisions/` 및 `evidence/`에 남긴다.
+격리된 Docker 실험에서 이 순서는 336회 중 4회의 요청 실패를 만들었다. Nginx upstream을 먼저 새 slot으로 바꾼 뒤 이전 slot을 종료한 순서는 416회 중 실패가 없었다. 자세한 조건과 원본 결과는 [실험 기록](../../evidence/2026-07-30-blue-green-switch-order/README.md), 결정은 [ADR-001](../../decisions/adr/ADR-001-blue-green-switch-order.md)에 남겼다.
+
+이 결과는 로컬 mock 환경의 근거다. 실제 운영 서버에서 같은 결과가 난다고 보장하지 않으며, 서버가 복구된 뒤 health check, upstream 전환, 요청 실패 여부를 별도로 확인한다.
 
 ## 운영 문서 갱신 기준
 
