@@ -2,7 +2,7 @@
 
 > 상태: 채택됨
 > 결정일: 2026-07-30
-> 관련 RFC: [Blue-Green 전환 순서 재현과 검증](../rfc/completed/2026-07-30-blue-green-switch-order.md)
+> 관련 RFC: [RFC-001: Blue-Green 전환 순서 재현과 검증](../rfc/completed/RFC-001-blue-green-switch-order.md)
 > 관련 Issue: Allreva_BE#116
 
 ## 결정
