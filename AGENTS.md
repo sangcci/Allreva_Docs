@@ -16,7 +16,6 @@
 - `architecture/runtime/`: CI/CD, 배포, 관측성, 장애 대응 기준
 - `decisions/rfc/`: 아직 확정되지 않은 제안과 검토
 - `decisions/adr/`: 확정된 중요한 결정과 이유
-- `evidence/`: 실험, 부하 테스트, 장애 재현과 결과
 - `reference/`: ERD, 외부 연동 등 참고 자료
 - `templates/`: 반복해서 쓰는 문서 양식
 
