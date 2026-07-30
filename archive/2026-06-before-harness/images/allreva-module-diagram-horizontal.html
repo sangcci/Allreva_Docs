@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Allreva Module Diagram</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #ffffff;
+      color: #1f2933;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+    }
+
+    .diagram {
+      width: 1120px;
+      max-width: calc(100vw - 40px);
+      padding: 36px;
+      background: #ffffff;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: 180px 56px 1fr 56px 280px;
+      align-items: center;
+    }
+
+    .layer {
+      min-height: 300px;
+      padding: 24px;
+      border: 1px solid #d6dde5;
+      border-radius: 18px;
+      background: #ffffff;
+    }
+
+    .layer-title {
+      margin: 0 0 20px;
+      text-align: center;
+      color: #111827;
+      font-size: 22px;
+      font-weight: 750;
+      letter-spacing: -0.03em;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .item {
+      padding: 12px 14px;
+      border: 1px solid #d6dde5;
+      border-radius: 12px;
+      background: #f8fafc;
+      color: #273444;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+
+    .core-items {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .core-items .item:last-child {
+      grid-column: 1 / -1;
+      background: #eef6f6;
+      border-color: #b8d8d8;
+      color: #0f4f4f;
+    }
+
+    .arrow {
+      position: relative;
+      height: 1px;
+      margin: 0 12px;
+      background: #aab4c0;
+    }
+
+    .arrow::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      right: 0;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      border-left: 9px solid #aab4c0;
+    }
+
+    @media (max-width: 860px) {
+      .diagram {
+        padding: 24px;
+      }
+
+      .flow {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .layer {
+        min-height: auto;
+      }
+
+      .arrow {
+        width: 1px;
+        height: 36px;
+        margin: 0;
+        justify-self: center;
+      }
+
+      .arrow::after {
+        top: auto;
+        bottom: 0;
+        left: -5px;
+        right: auto;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 9px solid #aab4c0;
+        border-bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="diagram" aria-label="Allreva module diagram">
+    <section class="flow">
+      <article class="layer">
+        <h2 class="layer-title">api</h2>
+        <div class="items">
+          <div class="item">REST</div>
+          <div class="item">BATCH</div>
+        </div>
+      </article>
+
+      <div class="arrow" aria-hidden="true"></div>
+
+      <article class="layer">
+        <h2 class="layer-title">core</h2>
+        <div class="core-items">
+          <div class="item">application</div>
+          <div class="item">implementation</div>
+          <div class="item">domain</div>
+          <div class="item">query</div>
+          <div class="item">port interface</div>
+        </div>
+      </article>
+
+      <div class="arrow" aria-hidden="true"></div>
+
+      <article class="layer">
+        <h2 class="layer-title">support</h2>
+        <div class="items">
+          <div class="item">DB</div>
+          <div class="item">Redis</div>
+          <div class="item">Caffeine</div>
+          <div class="item">S3</div>
+          <div class="item">OAuth</div>
+          <div class="item">KOPIS</div>
+          <div class="item">FCM</div>
+          <div class="item">Logging</div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

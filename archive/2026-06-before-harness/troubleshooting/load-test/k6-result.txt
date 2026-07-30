@@ -1,0 +1,145 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: script.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 100 max VUs, 1m0s max duration (incl. graceful stop):
+              * concurrent_apply: 100 iterations shared among 100 VUs (maxDuration: 30s, gracefulStop: 30s)
+
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=19 | connecting=0.687ms | waiting=247.745ms | duration=247.869ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=15 | connecting=0.147ms | waiting=250.093ms | duration=250.21ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=54 | connecting=4.203ms | waiting=251.404ms | duration=251.61ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=13 | connecting=4.795ms | waiting=256.337ms | duration=256.488ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=7 | connecting=0.671ms | waiting=266.657ms | duration=266.794ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=46 | connecting=0.308ms | waiting=272.365ms | duration=272.478ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=16 | connecting=0.674ms | waiting=276.638ms | duration=276.719ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=77 | connecting=0.452ms | waiting=276.306ms | duration=276.384ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=53 | connecting=3.811ms | waiting=279.139ms | duration=280.433ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=65 | connecting=5.17ms | waiting=282.49ms | duration=282.618ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=89 | connecting=0.161ms | waiting=285.531ms | duration=286.088ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=60 | connecting=3.446ms | waiting=289.981ms | duration=290.925ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=88 | connecting=0.237ms | waiting=293.327ms | duration=293.435ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=99 | connecting=0.711ms | waiting=301.908ms | duration=301.971ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=69 | connecting=0.123ms | waiting=302.981ms | duration=303.093ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=73 | connecting=0.218ms | waiting=305.135ms | duration=305.881ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=94 | connecting=0.193ms | waiting=309.669ms | duration=310.702ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=18 | connecting=0.5ms | waiting=316.067ms | duration=316.186ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=31 | connecting=0.088ms | waiting=321.605ms | duration=321.718ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=90 | connecting=0.14ms | waiting=320.617ms | duration=323.703ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=27 | connecting=0.104ms | waiting=329.161ms | duration=329.293ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=33 | connecting=0.684ms | waiting=327.024ms | duration=331.305ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=41 | connecting=0.212ms | waiting=330.51ms | duration=330.577ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=47 | connecting=0.101ms | waiting=339.423ms | duration=339.53ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=12 | connecting=0.162ms | waiting=343.037ms | duration=343.169ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=17 | connecting=0.211ms | waiting=349.496ms | duration=349.615ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=11 | connecting=0.569ms | waiting=352.677ms | duration=352.77ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=100 | connecting=0.625ms | waiting=351.165ms | duration=351.25ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=85 | connecting=0.283ms | waiting=353.564ms | duration=353.634ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=98 | connecting=0.554ms | waiting=358.69ms | duration=359.007ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=93 | connecting=0.101ms | waiting=362.34ms | duration=362.409ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=4 | connecting=0.184ms | waiting=367.758ms | duration=367.844ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=70 | connecting=0.334ms | waiting=367.026ms | duration=369.903ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=87 | connecting=0.155ms | waiting=369.567ms | duration=372.503ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=9 | connecting=0.456ms | waiting=376.236ms | duration=376.299ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=49 | connecting=0.627ms | waiting=375.974ms | duration=379.058ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=40 | connecting=0.475ms | waiting=383.05ms | duration=383.118ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=66 | connecting=0.439ms | waiting=380.096ms | duration=380.533ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=95 | connecting=0.922ms | waiting=382.302ms | duration=382.739ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=6 | connecting=0.135ms | waiting=389.98ms | duration=390.077ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=68 | connecting=0.091ms | waiting=388.287ms | duration=390.829ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=86 | connecting=0.416ms | waiting=388.691ms | duration=388.762ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=23 | connecting=0.219ms | waiting=396.663ms | duration=396.745ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=72 | connecting=3.272ms | waiting=396.138ms | duration=396.834ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=43 | connecting=0.571ms | waiting=401.417ms | duration=401.662ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=8 | connecting=0.505ms | waiting=407.915ms | duration=407.989ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=14 | connecting=4.11ms | waiting=407.288ms | duration=408.118ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=92 | connecting=0.188ms | waiting=409.769ms | duration=409.899ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=82 | connecting=0.085ms | waiting=416.907ms | duration=417.022ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=67 | connecting=0.211ms | waiting=419.628ms | duration=422.485ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=76 | connecting=0.174ms | waiting=425.746ms | duration=425.928ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=79 | connecting=0.082ms | waiting=424.4ms | duration=424.944ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=2 | connecting=0.333ms | waiting=430.322ms | duration=430.388ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=25 | connecting=0.298ms | waiting=425.932ms | duration=426.168ms" source=console
+time="2026-05-07T01:18:58+09:00" level=info msg="VU=26 | connecting=4.548ms | waiting=426.086ms | duration=426.674ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=3 | connecting=4.514ms | waiting=427.66ms | duration=428.311ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=64 | connecting=2.285ms | waiting=428.751ms | duration=429.826ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=78 | connecting=3.493ms | waiting=428.933ms | duration=429.844ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=96 | connecting=0.231ms | waiting=431.546ms | duration=432.255ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=39 | connecting=0.161ms | waiting=433.741ms | duration=436.559ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=74 | connecting=0.695ms | waiting=434.579ms | duration=435.014ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=84 | connecting=0.594ms | waiting=435.096ms | duration=435.145ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=63 | connecting=3.047ms | waiting=435.971ms | duration=436.849ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=10 | connecting=0.712ms | waiting=441.438ms | duration=441.523ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=59 | connecting=0.772ms | waiting=437.806ms | duration=441.465ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=21 | connecting=0.364ms | waiting=443.769ms | duration=443.839ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=22 | connecting=4.674ms | waiting=440.455ms | duration=440.565ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=35 | connecting=0.545ms | waiting=442.133ms | duration=445.573ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=81 | connecting=0.335ms | waiting=442.436ms | duration=442.512ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=42 | connecting=0.288ms | waiting=442.707ms | duration=442.743ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=24 | connecting=4.957ms | waiting=443.395ms | duration=443.494ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=48 | connecting=0.496ms | waiting=444.359ms | duration=447.468ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=1 | connecting=0.282ms | waiting=449.644ms | duration=449.72ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=51 | connecting=0.713ms | waiting=444.9ms | duration=448.581ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=38 | connecting=0.611ms | waiting=449.926ms | duration=449.953ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=36 | connecting=0.82ms | waiting=445.238ms | duration=448.763ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=5 | connecting=0.314ms | waiting=449.849ms | duration=449.953ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=75 | connecting=4.923ms | waiting=446.69ms | duration=446.777ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=91 | connecting=0.336ms | waiting=448.712ms | duration=448.85ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=58 | connecting=0.113ms | waiting=452.138ms | duration=454.946ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=28 | connecting=2.966ms | waiting=452.201ms | duration=453.55ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=45 | connecting=0.457ms | waiting=451.623ms | duration=455.549ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=44 | connecting=0.226ms | waiting=457.194ms | duration=457.558ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=57 | connecting=0.37ms | waiting=454.412ms | duration=457.319ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=61 | connecting=0.237ms | waiting=454.682ms | duration=457.525ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=37 | connecting=0.919ms | waiting=456.473ms | duration=457.751ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=97 | connecting=0.362ms | waiting=457.298ms | duration=457.525ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=71 | connecting=0.27ms | waiting=456.988ms | duration=458.069ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=80 | connecting=0.548ms | waiting=455.795ms | duration=459.582ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=62 | connecting=0.13ms | waiting=455.621ms | duration=459.473ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=56 | connecting=0.532ms | waiting=456.098ms | duration=459.629ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=29 | connecting=0.918ms | waiting=457.676ms | duration=460.159ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=32 | connecting=0.41ms | waiting=459.159ms | duration=462.784ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=34 | connecting=0.291ms | waiting=460.033ms | duration=462.916ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=83 | connecting=0.368ms | waiting=461.366ms | duration=461.469ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=30 | connecting=0.127ms | waiting=460.295ms | duration=460.424ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=50 | connecting=0.256ms | waiting=460.325ms | duration=463.16ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=20 | connecting=0.229ms | waiting=464.936ms | duration=465.27ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=52 | connecting=0.584ms | waiting=460.768ms | duration=464.217ms" source=console
+time="2026-05-07T01:18:59+09:00" level=info msg="VU=55 | connecting=0.747ms | waiting=460.773ms | duration=464.216ms" source=console
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 100    158.222591/s
+    checks_succeeded...: 50.00% 50 out of 100
+    checks_failed......: 50.00% 50 out of 100
+
+    ✗ status is 200
+      ↳  50% — ✓ 50 / ✗ 50
+
+    HTTP
+    http_req_duration..............: avg=197.51ms min=566µs    med=156.99ms max=465.27ms p(90)=453.68ms p(95)=459.58ms
+      { expected_response:true }...: avg=114.14ms min=566µs    med=1.08ms   max=422.48ms p(90)=376.57ms p(95)=394.08ms
+    http_req_failed................: 25.00% 50 out of 200
+    http_reqs......................: 200    316.445181/s
+
+    EXECUTION
+    iteration_duration.............: avg=394.74ms min=249.07ms med=424.1ms  max=465.58ms p(90)=460.27ms p(95)=463.28ms
+    iterations.....................: 100    158.222591/s
+
+    NETWORK
+    data_received..................: 100 kB 157 kB/s
+    data_sent......................: 56 kB  89 kB/s
+
+
+
+
+running (0m00.6s), 000/100 VUs, 100 complete and 0 interrupted iterations
+concurrent_apply ✓ [ 100% ] 100 VUs  00.5s/30s  100/100 shared iters

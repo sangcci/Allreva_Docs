@@ -1,0 +1,1 @@
+![Allreva ERD](../images/ALLREVA_ERD.png)
