@@ -1,0 +1,42 @@
+name: 문서 오류
+description: 잘못된 설명, 깨진 링크, 오래된 안내를 신고합니다.
+title: "[BUG] "
+labels: ["🐛 bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        문서의 오류와 기대하는 내용을 작성해 주세요.
+
+  - type: input
+    id: location
+    attributes:
+      label: 오류 위치
+      description: 문서 경로와 가능한 경우 제목 또는 링크를 적어 주세요.
+      placeholder: 예) architecture/runtime/delivery.md - 현재 확인한 점
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 현재 내용
+      description: 잘못됐거나 동작하지 않는 내용을 적어 주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대 내용
+      description: 어떻게 고쳐져야 하는지 적어 주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: 근거 또는 관련 자료
+      description: 코드, 공식 문서, 관련 Issue·PR이 있으면 적어 주세요.
+    validations:
+      required: false
