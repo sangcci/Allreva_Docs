@@ -16,7 +16,7 @@
 | `product/` | 서비스 목적, 용어, 기능 흐름 | 정비 예정 |
 | `architecture/` | 시스템, 모듈, 데이터와 API 경계 | 구조 개요와 모듈 경계 작성됨 |
 | `rules/` | Issue·PR, 개발, 테스트와 품질 기준 | Issue·PR 기준 작성됨 |
-| `architecture/runtime/` | CI/CD, 배포, 관측성, 장애 대응 | 정비 예정 |
+| `architecture/runtime/` | CI/CD, 배포, 관측성, 장애 대응 | CI/CD와 배포 흐름 작성됨 |
 | `decisions/` | RFC와 ADR | RFC 기록 체계 시작 |
 | `evidence/` | 실험, 부하 테스트, 문제 해결 근거 | 실험 기록 기준 작성됨 |
 | `reference/` | ERD, 외부 연동, API 참고 자료 | 정비 예정 |
