@@ -5,6 +5,7 @@
 - `rfc/active/`: 검토 중인 제안
 - `rfc/completed/`: 결론이 난 RFC
 - `adr/`: 확정된 결정
+- `templates/`: RFC와 ADR 작성 양식
 
 RFC와 ADR은 각각 독립된 고유 식별자를 사용한다. RFC 파일명은 `RFC-001-의미-있는-slug.md`, ADR 파일명은 `ADR-001-의미-있는-slug.md` 형식으로 쓴다. Issue와 PR 번호는 작업 추적용이므로 문서 식별자와 맞추지 않고, 문서 상단의 관련 자료 링크로 연결한다.
 
