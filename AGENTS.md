@@ -10,14 +10,13 @@
 
 ## 문서 위치
 
-- `product/`: 서비스 목적, 용어, 기능 흐름
 - `architecture/`: 시스템과 모듈 경계, 데이터와 API의 큰 구조
 - `rules/`: Issue·PR, 개발, 테스트와 품질 기준
 - `architecture/runtime/`: CI/CD, 배포, 관측성, 장애 대응 기준
 - `decisions/rfc/`: 아직 확정되지 않은 제안과 검토
 - `decisions/adr/`: 확정된 중요한 결정과 이유
-- `reference/`: ERD, 외부 연동 등 참고 자료
-- `templates/`: 반복해서 쓰는 문서 양식
+- `decisions/templates/`: RFC와 ADR 작성 양식
+- `.github/`: GitHub가 실제로 사용하는 Issue Form과 PR template
 
 ## 작업 원칙
 

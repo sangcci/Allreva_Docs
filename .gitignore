@@ -1,2 +1,6 @@
-### Editor Configs
+### Local editor and agent runtime configs
 .obsidian/
+.claude/
+.pi/
+.code-review-graph/
+.DS_Store
