@@ -1,6 +1,7 @@
 # ADR-001: Blue-Green 전환은 upstream을 먼저 바꾼다
 
-> 상태: 채택됨
+> 결정 상태: 채택됨
+> 적용 상태: 적용 보류
 > 결정일: 2026-07-30
 > 관련 RFC: [RFC-001: Blue-Green 전환 순서 재현과 검증](../rfc/completed/RFC-001-blue-green-switch-order.md)
 > 관련 Issue: Allreva_BE#116
@@ -22,6 +23,10 @@
 새 upstream 전환이 실제로 적용됐는지 확인한 뒤 이전 slot을 정리해야 하므로, 배포 절차와 rollback 기준이 조금 더 복잡해진다.
 
 이 실험은 mock application과 로컬 Docker 환경에서 실행했다. 실제 Spring Boot 시작 시간, runner 간 지연, 운영 Nginx 설정은 따로 검증해야 한다.
+
+## 적용과 검증
+
+격리 Docker 실험은 완료했다. 다만 staging 서버가 사라져 운영 배포 스크립트 수정과 실제 환경 검증은 보류한다. staging 환경을 다시 마련한 뒤 별도 Issue에서 적용과 rollback을 확인한다.
 
 ## 영향
 
