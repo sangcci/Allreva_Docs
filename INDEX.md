@@ -14,7 +14,7 @@
 | 영역 | 다루는 내용 | 상태 |
 | --- | --- | --- |
 | `architecture/` | 시스템, 모듈, 데이터와 API 경계 | 구조 개요와 모듈 경계 작성됨 |
-| `rules/` | Issue·PR, 개발, 테스트와 품질 기준 | Issue·PR 기준 작성됨 |
+| `rules/` | Issue·PR, 개발, 테스트와 품질 기준 | Issue·PR 및 [FE 코드 컨벤션](rules/frontend-code-conventions.md) 작성됨 |
 | `architecture/runtime/` | CI/CD, 배포, 관측성, 장애 대응 | CI/CD와 배포 흐름 작성됨 |
 | `decisions/` | RFC와 ADR | RFC 기록 체계 시작 |
 
