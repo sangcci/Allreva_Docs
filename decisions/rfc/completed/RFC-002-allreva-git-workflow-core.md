@@ -1,8 +1,10 @@
 # RFC-002: Allreva Git workflow core와 adapter 분리
 
-> 상태: 검토 중
+> 상태: 완료
 > 작성일: 2026-08-01
 > 관련 Issue: Allreva_Docs#17
+> 관련 ADR: [ADR-002: Git workflow는 공통 core와 플랫폼 adapter로 나눈다](../../adr/ADR-002-git-workflow-core.md)
+> 후속 정책: [RFC-003: 필수 개발 workflow 표준](RFC-003-development-workflow-standard.md)과 [ADR-003: 모든 개발 작업에 worktree와 두 단계 PR 승인을 적용한다](../../adr/ADR-003-mandatory-development-workflow.md)가 이 RFC의 선택형 explain-diff 정책을 대체한다. 공통 core와 플랫폼 adapter 제안은 완료 상태로 유지한다.
 > 관련 구현: `pi-git-commit`
 
 ## 제안 요약
@@ -110,7 +112,7 @@ core는 모델 호출, UI, GitHub 인증을 갖지 않는다. 입력을 JSON으�
 - core의 inspect와 validate는 읽기 전용이다.
 - adapter는 branch, stage, commit, Issue, PR, push 같은 쓰기 행동 전에 제안과 검사 결과를 사용자에게 보여 준다.
 - 사용자는 진행, 편집, 재생성, 취소 중 하나를 선택한다.
-- `explain-diff`는 큰 변경이나 사용자가 이해를 원할 때 Git workflow 자체의 변경에도 선택적으로 적용한다.
+- `explain-diff`는 큰 변경이나 사용자가 이해를 원할 때 Git workflow 자체의 변경에도 선택적으로 적용한다. 이 선택형 정책은 [RFC-003](RFC-003-development-workflow-standard.md)과 [ADR-003](../../adr/ADR-003-mandatory-development-workflow.md)에서 모든 PR의 필수 artifact와 사용자 이해 승인으로 대체됐다.
 
 ## 예상 영향과 위험
 

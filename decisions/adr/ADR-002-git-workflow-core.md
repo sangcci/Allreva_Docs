@@ -2,8 +2,10 @@
 
 > 결정 상태: 채택됨
 > 적용 상태: 적용 중
+> 적용 범위: 공통 core와 플랫폼 adapter 분리
 > 결정일: 2026-08-01
 > 관련 RFC: [RFC-002: Allreva Git workflow core와 adapter 분리](../rfc/completed/RFC-002-allreva-git-workflow-core.md)
+> 후속 결정: [ADR-003: 필수 개발 workflow 표준](ADR-003-mandatory-development-workflow.md)는 필수 workflow, worktree, PR gate 정책만 대체한다. 이 ADR의 공통 core와 플랫폼 adapter 분리는 계속 적용한다.
 > 관련 Issue: Allreva_Docs#17
 
 ## 결정
@@ -11,6 +13,8 @@
 Allreva Git workflow 도구는 `Allreva_Harness`의 공통 core와 Pi·Codex·Claude adapter로 나눈다. 기존 `pi-git-commit`의 안전한 Git 처리와 HITL은 보존하되, Pi UI·모델 호출·세션 의존성은 adapter에 둔다.
 
 제품 저장소마다 다른 branch, commit, Issue, PR 규칙은 `.allreva/git-workflow.json`에 둔다. GitHub Actions는 최종 lint로 유지하고, core는 사전 검사와 dry-run 결과를 제공한다.
+
+필수 workflow, worktree, PR gate는 이 ADR의 적용 범위가 아니다. 해당 정책은 [ADR-003](ADR-003-mandatory-development-workflow.md)가 현재 기준이며, 이 ADR의 공통 core와 플랫폼 adapter 분리를 대체하지 않는다.
 
 ## 이유
 
@@ -27,6 +31,8 @@ core 추출 초기에는 기존 Pi extension과 새 core가 잠시 함께 존재
 ## 적용과 검증
 
 현재 `Allreva_Harness`에는 explain-diff와 cross-harness adapter 구조만 있다. Git workflow core와 CLI는 아직 구현하지 않았다.
+
+이 ADR의 적용 상태는 공통 core와 플랫폼 adapter 분리에 한정한다. 필수 workflow, worktree, PR gate의 적용과 검증 상태는 [ADR-003](ADR-003-mandatory-development-workflow.md)를 따른다.
 
 첫 적용은 BE의 commit 규칙과 GitHub title lint를 기준으로 한다. 사람이 제안을 검토·편집·취소할 수 있고, 승인 전에는 Git·GitHub 쓰기 행동이 없는지 확인한다.
 
