@@ -19,6 +19,13 @@
 <!-- 실행한 테스트 명령, CI 결과, 수동 확인, 재현 실험을 적어주세요. -->
 -
 
+## 변경 상태 대조
+<!-- PR 생성 직전에 git status --short, git diff --cached, git diff를 확인하세요. staged, unstaged, untracked 변경이 이번 PR 범위에 포함되는지 적으세요. -->
+- `git status --short`:
+- staged 변경:
+- unstaged 변경:
+- untracked 변경:
+
 ## 남은 확인 사항
 <!-- 없다면 '없음'이라고 적어주세요. 있다면 이유와 남은 위험을 짧게 적어주세요. -->
 - 없음

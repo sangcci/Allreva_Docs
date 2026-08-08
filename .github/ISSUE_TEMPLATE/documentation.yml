@@ -39,6 +39,6 @@ body:
     id: references
     attributes:
       label: 관련 자료
-      description: 관련 Issue, PR, RFC, ADR, 코드 경로가 있으면 적어 주세요.
+      description: 관련 Issue, PR, ADR, 코드 경로가 있으면 적어 주세요. 새 RFC는 만들거나 연결하지 않습니다.
     validations:
       required: false

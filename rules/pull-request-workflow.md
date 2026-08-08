@@ -17,6 +17,16 @@ PR은 리뷰어가 코드만 보고 추측하지 않도록, 변경한 이유와 
 
 사용자만 GitHub에서 squash merge를 수행한다. 실행자는 merge하지 않는다. 사용자가 merge 완료와 cleanup 신호를 준 뒤에만 local worktree와 local branch를 정리한다.
 
+## PR 생성 직전 변경 상태 대조
+
+PR 생성 승인 직전에 `git status --short`, `git diff --cached`, `git diff`를 순서대로 확인한다. `git status --short`의 모든 staged, unstaged, untracked 변경을 이번 PR 범위와 대조한다.
+
+- staged 변경: PR용 commit에 넣을 파일과 diff인지 확인한다.
+- unstaged 변경: PR용 commit에 누락 없이 추가할 변경인지, 이번 PR에서 제외할 작업인지 확인한다.
+- untracked 변경: PR용 commit에 추가할 파일인지, 생성물이나 다른 작업 파일인지 확인한다.
+
+대조 결과는 [PR template](../.github/PULL_REQUEST_TEMPLATE.md)의 `변경 상태 대조`에 남긴다. 의도하지 않은 변경이나 포함 여부가 불명확한 파일이 있으면 PR을 만들지 않는다.
+
 ## PR에 적는 내용
 
 - 배경: 이 PR이 필요한 이유
