@@ -13,9 +13,9 @@
 - `architecture/`: 시스템과 모듈 경계, 데이터와 API의 큰 구조
 - `rules/`: Issue·PR, 개발, 테스트와 품질 기준
 - `architecture/runtime/`: CI/CD, 배포, 관측성, 장애 대응 기준
-- `decisions/rfc/`: 아직 확정되지 않은 제안과 검토
+- `decisions/rfc/`: 이전 workflow의 보존 기록. 새 RFC를 만들거나 연결하지 않는다.
 - `decisions/adr/`: 확정된 중요한 결정과 이유
-- `decisions/templates/`: RFC와 ADR 작성 양식
+- `decisions/templates/`: ADR 작성 양식
 - `.github/`: GitHub가 실제로 사용하는 Issue Form과 PR template
 
 ## 작업 원칙
@@ -28,3 +28,4 @@
 6. 한 문서에 모든 배경을 넣지 않는다. 필요한 경우 관련 문서로 연결한다.
 7. ASCII 다이어그램은 Markdown code block 안에 쓰고, 상자·선·화살표·라벨은 영문과 ASCII 문자만 사용한다.
 8. Issue와 PR은 정해진 항목을 기계적으로 길게 채우지 않는다. 변경 크기에 맞춰 실제로 바뀐 점, 확인한 내용, 남은 확인 사항을 짧고 사실적으로 쓴다.
+9. 개발 workflow에서는 새 RFC를 만들거나 Issue, plan, PR에 연결하지 않는다. 여러 작업에 오래 영향을 주는 중요한 아키텍처, 운영, 정책 결정만 ADR로 남긴다.
