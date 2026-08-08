@@ -4,6 +4,7 @@
 > 적용 상태: 적용 중
 > 결정일: 2026-08-06
 > 관련 RFC: [RFC-003](../rfc/completed/RFC-003-development-workflow-standard.md)
+> 후속 결정: [ADR-004](ADR-004-rfc-trigger-policy.md)가 모든 작업 RFC 작성 규칙만 대체한다. Issue, worktree, PR gate, merge, cleanup 규칙은 계속 적용한다.
 > 대체 범위: [ADR-002](ADR-002-git-workflow-core.md)의 필수 workflow, worktree, PR gate 정책만 대체한다. ADR-002의 공통 core와 플랫폼 adapter 분리는 계속 적용한다.
 > 관련 Issue: [Allreva_Docs#19](https://github.com/sangcci/Allreva_Docs/issues/19)
 
