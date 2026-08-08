@@ -5,8 +5,8 @@
 ## 문서의 신뢰 수준
 
 - 현재 기준 문서: 코드와 대조해 유지하는 문서다. 설계와 운영 판단은 이 문서를 우선한다.
-- 진행 중 문서: RFC와 활성 계획처럼 아직 결론이 나지 않은 문서다. 확정된 규칙으로 사용하지 않는다.
-- 검증 결과: RFC와 ADR에 기록한 당시 조건과 결과다. 현재 구현과 다를 수 있으므로 관련 코드와 함께 확인한다.
+- 진행 중 문서: 활성 계획처럼 아직 결론이 나지 않은 문서다. 확정된 규칙으로 사용하지 않는다.
+- 검증 결과: ADR과 보존 기록에 남긴 당시 조건과 결과다. 현재 구현과 다를 수 있으므로 관련 코드와 함께 확인한다.
 - 보존 자료: `archive/`에 있는 이전 문서다. 맥락을 찾을 때만 참고한다.
 
 ## 문서 영역
@@ -16,7 +16,7 @@
 | `architecture/` | 시스템, 모듈, 데이터와 API 경계 | 구조 개요와 모듈 경계 작성됨 |
 | `rules/` | Issue·PR, 개발, 테스트와 품질 기준 | [개발 workflow](rules/development-workflow.md), Issue·PR, [FE 코드 컨벤션](rules/frontend-code-conventions.md), [BE Java 코드 컨벤션](rules/backend-code-conventions.md), [BE 테스트 규칙](rules/backend-test-conventions.md) 작성됨 |
 | `architecture/runtime/` | CI/CD, 배포, 관측성, 장애 대응 | CI/CD와 배포 흐름 작성됨 |
-| `decisions/` | RFC와 ADR | RFC 기록 체계 시작 |
+| `decisions/` | ADR과 보존 기록 | [ADR 기록 기준](decisions/README.md) 작성됨 |
 
 ## 문서 변경 기준
 
